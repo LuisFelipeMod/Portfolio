@@ -83,12 +83,24 @@ export default function Home() {
                 Luis Felipe Gonçalves Modesto
               </h2>
               <p className={styles.aboutMe_paragraph}>
-                Com quase 3 anos de experiência profissional, investi esse tempo
-                na criação de e-commerces. Com quase 3 anos de experiência
-                profissional, investi esse tempo na criação de e-commerces. Com
-                quase 3 anos de experiência profissional, investi esse tempo na
-                criação de e-commerces. Com quase 3 anos de experiência
-                profissional, investi esse tempo na criação de e-commerces.
+                Olá, meu nome é Luis Felipe e sou desenvolvedor! <br />
+                <br />
+                Estudo programação desde 2019. Desde então, venho me aprimorando
+                cada vez mais, o meu objetivo é absorver cada vez mais
+                conhecimento! <br />
+                <br />
+                Minha primeira oportunidade de emprego surgiu em 2021, e foi
+                muito importante para o meu crescimento. Graças à essa
+                oportunidade, aprendi a ter uma visão corporativa; desenvolvendo
+                minha comunicação, trabalho em equipe e proatividade.
+                <br />
+                <br />
+                Estou cursando Análise e Desenvolvimento de Sistemas na Unimar,
+                e anteriormente, cursei Desenvolvimento de Sistemas Integrado ao
+                Ensino Médio na Etec Antonio Devisate. <br />
+                <br />
+                Caso tenha uma proposta, segue abaixo meus contatos e redes
+                sociais. xD
               </p>
 
               <div className={styles.contactMe}>
@@ -173,7 +185,6 @@ export default function Home() {
       </section>
 
       <Projects />
-
     </main>
   );
 }
