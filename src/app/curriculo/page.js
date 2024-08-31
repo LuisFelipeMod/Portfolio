@@ -132,11 +132,9 @@ export default function Curriculo({ children, home }) {
               Com quase 3 anos de experiência profissional, investi esse tempo
               na criação de e-commerces. Fui precursor e liderei o
               desenvolvimento web de projetos, evoluindo muito ao longo desse
-              período. Trabalhei com tecnologias como TypeScript, Angular,
-              JavaScript, HTML, CSS, SCSS, Docker, GraphQL e Git, entre outras.
-              Além disso, também possuo familiaridade com práticas de segurança
-              da informação, o que garante a implementação de soluções robustas
-              e confiáveis.
+              período. Trabalhei com tecnologias como Typescript, Next.Js,
+              React, Vue.js, JavaScript, Docker, GraphQL, HTML, CSS, SASS, e
+              Git, entre outras.
             </span>
           </div>
 
@@ -158,7 +156,8 @@ export default function Curriculo({ children, home }) {
               </Link>
               <span className={styles.desc_experience}>
                 <strong>
-                  Liderei o primeiro grande projeto da empresa utilizando Shopify:
+                  Liderei o primeiro grande projeto da empresa utilizando
+                  Shopify:
                 </strong>
                 <br />
                 - Iniciei os primeiros estudos da plataforma e, posteriormente,
@@ -187,16 +186,17 @@ export default function Curriculo({ children, home }) {
                 <br />
                 <strong>
                   Impulsionei a cultura de documentação na empresa:
-                </strong> <br/>
-                - Identificando a necessidade de otimizar nossos processos,
-                tomei a iniciativa de documentar detalhadamente as atividades de
-                práticas de programação, processos de garantia de qualidade,
-                funcionamento dos meus projetos, implementação de tráfego pago e
-                processos das plataformas e-commerce. Essa ação resultou em uma
-                redução muito significativa no tempo de treinamento de novos
-                colaboradores e um considerável aumento na eficiência da equipe,
-                além de garantir que todos os membros da equipe estivessem
-                alinhados e trabalhando com as mesmas informações.
+                </strong>{" "}
+                <br />- Identificando a necessidade de otimizar nossos
+                processos, tomei a iniciativa de documentar detalhadamente as
+                atividades de práticas de programação, processos de garantia de
+                qualidade, funcionamento dos meus projetos, implementação de
+                tráfego pago e processos das plataformas e-commerce. Essa ação
+                resultou em uma redução muito significativa no tempo de
+                treinamento de novos colaboradores e um considerável aumento na
+                eficiência da equipe, além de garantir que todos os membros da
+                equipe estivessem alinhados e trabalhando com as mesmas
+                informações.
               </span>
             </div>
           </div>
