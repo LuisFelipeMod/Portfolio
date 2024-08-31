@@ -52,7 +52,7 @@ export default function Curriculo({ children, home }) {
               duration: 0.2,
             }}
           >
-            Desenvolvedor Front-End
+            Desenvolvedor
           </motion.h2>
           <ScrollBehavior />
           <SocialMedias />
@@ -147,79 +147,57 @@ export default function Curriculo({ children, home }) {
           <div
             className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgTop}`}
           >
-            <span className={styles.year_experience}>2023 - atual</span>
+            <span className={styles.year_experience}>Jan 2022 - Presente</span>
             <div className={styles.info_experience}>
               <Link
                 href="https://eficazmarketing.com/"
                 className={styles.profission_experience}
               >
-                Desenvolvedor Front-End - Eficaz Marketing
+                Desenvolvedor - Eficaz Marketing
                 <span className={styles.arrow_up}>⮭</span>
               </Link>
-              <span className={styles.level_experience}>Júnior</span>
               <span className={styles.desc_experience}>
-                Atualmente, desenvolvo projetos para plataformas e-commerce,
-                trabalhando com APIs RESTFUL e GraphQL para desenvolver
-                e-commerces. Além disso, continuo sendo responsável pelo Adtech
-                e dando auxílio para os estagiários.
+                <strong>
+                  Liderei o primeiro grande projeto da empresa utilizando Shopify:
+                </strong>
+                <br />
+                - Iniciei os primeiros estudos da plataforma e, posteriormente,
+                liderando parte da equipe de desenvolvimento, implementei um
+                tema customizado utilizando a Custom Storefront API. Adotei o
+                gitflow para otimizar o fluxo de trabalho e garantir a qualidade
+                do código. Fui responsável por escolher as tecnologias mais
+                adequadas para o projeto, criar a estrutura do código e garantir
+                a aplicação de boas práticas de programação. Além disso, conduzi
+                as revisões de código, assegurando a qualidade e a consistência
+                do desenvolvimento. Documentei todos os processos para facilitar
+                a manutenção e o onboarding de novos membros da equipe.
+                Ministrei diversas reuniões, apresentando dados e insights sobre
+                a plataforma Shopify para auxiliar na construção de novos
+                projetos. Graças à minha liderança e expertise técnica,
+                conseguimos entregar o projeto dentro do prazo e com resultados
+                superiores às expectativas. <br />
+                <br />
+                <strong>Atuei como mentor de novos membros do time:</strong>
+                <br />
+                - Fiquei responsável por os instruir referente os padrões e
+                processos da equipe. Ministrei treinamentos e reuniões, com a
+                finalidade de promover conhecimento técnico. Fiz Code-Review
+                para acompanhá-los e instruí-los.
+                <br />
+                <br />
+                <strong>
+                  Impulsionei a cultura de documentação na empresa:
+                </strong> <br/>
+                - Identificando a necessidade de otimizar nossos processos,
+                tomei a iniciativa de documentar detalhadamente as atividades de
+                práticas de programação, processos de garantia de qualidade,
+                funcionamento dos meus projetos, implementação de tráfego pago e
+                processos das plataformas e-commerce. Essa ação resultou em uma
+                redução muito significativa no tempo de treinamento de novos
+                colaboradores e um considerável aumento na eficiência da equipe,
+                além de garantir que todos os membros da equipe estivessem
+                alinhados e trabalhando com as mesmas informações.
               </span>
-            </div>
-          </div>
-          <div className={`${styles.box_experience} ${styles.box_auto}`}>
-            <span className={styles.year_experience}>2022 - 2023</span>
-            <div className={styles.info_experience}>
-              <Link
-                href="https://eficazmarketing.com/"
-                className={styles.profission_experience}
-              >
-                Desenvolvedor Front-End - Eficaz Marketing
-                <span className={styles.arrow_up}>⮭</span>
-              </Link>
-              <span className={styles.level_experience}>Trainee</span>
-              <span className={styles.desc_experience}>
-                Atuei desenvolvendo e dando manutenções para plataformas
-                e-commerce e sendo responsável pelo Adtech da empresa, nesse
-                período também foi me passado a responsabilidade de dar tutoria
-                e auxiliar estagiários.
-              </span>
-            </div>
-          </div>
-          <div className={`${styles.box_experience} ${styles.box_auto}`}>
-            <span className={styles.year_experience}>
-              jan de 2022 - nov de 2022
-            </span>
-            <div className={styles.info_experience}>
-              <Link
-                href="https://eficazmarketing.com/"
-                className={styles.profission_experience}
-              >
-                Desenvolvedor Front-End - Eficaz Marketing
-                <span className={styles.arrow_up}>⮭</span>
-              </Link>
-              <span className={styles.level_experience}>Estágiário</span>
-              <span className={styles.desc_experience}>
-                Atuei aprendendo e desenvolvendo e dando manutenção para
-                plataformas e-commerces, tais como: Tray, Wake, Wordpress e Loja
-                Integrada.<br></br>Também adquiri conhecimento em Adtech, sendo
-                responsável pela maioria das demandas Adtech da empresa.
-              </span>
-            </div>
-          </div>
-          <div
-            className={`${styles.box_experience} ${styles.box_auto} ${styles.box_mgBottom}`}
-          >
-            <span className={styles.year_experience}>
-              jun de 2021 - dezembro de 2022
-            </span>
-            <div className={styles.info_experience}>
-              <Link
-                href="https://www.paschoalotto.com.br/"
-                className={styles.profission_experience}
-              >
-                Operador de teleserviços - Paschoalotto
-                <span className={styles.arrow_up}>⮭</span>
-              </Link>
-              <span className={styles.level_experience}>Tempo Integral</span>
             </div>
           </div>
           <h3 className={styles.title_experience} id="education">
