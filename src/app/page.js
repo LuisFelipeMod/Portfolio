@@ -3,8 +3,6 @@
 import styles from "@/app/page.module.css";
 import { motion, useScroll } from "framer-motion";
 import React from "react";
-import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
