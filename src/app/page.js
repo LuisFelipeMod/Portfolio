@@ -3,16 +3,14 @@
 import styles from "@/app/page.module.css";
 import { motion, useScroll } from "framer-motion";
 import React from "react";
-import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
 import useMediaQuery from "@/components/useMediaQuery";
 
-const isMobile = useMediaQuery("(max-width: 991px)");
 
 export default function Home() {
+  const isMobile = useMediaQuery("(max-width: 991px)");
   const { scrollYProgress } = useScroll();
   const [menuOpen, setMenuOpen] = React.useState(false);
 
