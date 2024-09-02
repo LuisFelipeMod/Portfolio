@@ -1,11 +1,19 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
 export default function useMediaQuery(query) {
+  const [matches, setMatches] = useState(false);
 
-  const media = window.matchMedia(query);
-  const matches = media.matches;
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const updateMatches = () => setMatches(media.matches);
 
-  if (matches){
-    return true;
-  }
+    updateMatches(); // Check on mount
+    media.addEventListener('change', updateMatches);
 
-  return false;
+    return () => media.removeEventListener('change', updateMatches);
+  }, [query]);
+
+  return matches;
 }

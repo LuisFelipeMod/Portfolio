@@ -3,13 +3,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "@/app/page.module.css";
-import { Scale } from "lucide-react";
 
 export default function Navbar(props) {
 
   const openInMobile = props.open; 
-
-
   
   const scrollToAboutMe = () => {
     const aboutSection = document.getElementById("aboutMe");

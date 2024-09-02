@@ -8,9 +8,9 @@ import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
 import useMediaQuery from "@/components/useMediaQuery";
 
-const isMobile = useMediaQuery("(max-width: 991px)");
 
 export default function Home() {
+  const isMobile = useMediaQuery("(max-width: 991px)");
   const { scrollYProgress } = useScroll();
   const [menuOpen, setMenuOpen] = React.useState(false);
 
