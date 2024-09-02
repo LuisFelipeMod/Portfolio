@@ -1,11 +1,16 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import styles from "@/app/page.module.css";
 import { Scale } from "lucide-react";
 
-export default function Navbar() {
+export default function Navbar(props) {
+
+  const openInMobile = props.open; 
+
+
+  
   const scrollToAboutMe = () => {
     const aboutSection = document.getElementById("aboutMe");
 
@@ -24,7 +29,7 @@ export default function Navbar() {
 
   return (
     <motion.navbar
-      className={styles.nav}
+      className={openInMobile ? `${styles.nav} ${styles.open}`: styles.nav }
       initial={{
         top: "120%",
         opacity: 0,
