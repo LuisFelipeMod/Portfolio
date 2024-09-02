@@ -56,6 +56,10 @@
   padding: 1rem 1rem;
   border-radius: 1.3rem;
 }
+
+.navItem a{
+  padding: 0;
+}
 .bgWave {
   top: 0;
   transform: rotate(180deg);
@@ -238,6 +242,10 @@
   text-transform: none;
 }
 
+.menuMobile{
+  display: none;
+}
+
 @media (max-width: 991px) {
   .contactMe {
     display: flex;
@@ -262,32 +270,100 @@
   .aboutMe_myName {
     font-size: 1rem;
   }
-  .navItem {
-    font-size: 16px;
+  .navItem{
+    width: 24rem;
   }
-  .aboutMe_img {
-    padding: 0 10%;
+  .nav{
+    left: 1rem;
+    opacity: 0;
+    max-width: 0;
+    overflow: hidden;
+    transition: .444s ease-in-out;
+  }
+  .nav > ul{
+    max-width: 0;
+    transition: .444s ease-in-out;
   }
 
-  .mainTitle {
-    position: revert;
-    margin-top: 0;
+  .open{
+    opacity: 1;
+    max-width: 24rem;
+    top: 4rem !important;
+    transition: .444s ease-in-out;
   }
-  .nav {
-    position: revert;
+
+  .open > ul{
+    max-width: 100%;
+    transition: .444s ease-in-out;
+  }
+  .navList{
+    flex-direction: column;
+  }
+  .navItem {
+    font-size: 1em;
+  }
+  .aboutMe_img {
+    max-width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+  .aboutMe_figure{
+    display: flex;
+    align-items: center;
   }
   .comingSection {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
   }
   .bgWave {
-    display: none;
+    display: block;
+    width: 500%;
+    left: -73rem;
+    overflow: hidden;
+  }
+  .aboutMe_section{
+    padding-top: 18rem;
+  }
+  .projectsList{
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .projectsItem{
+    width: 90%;
+    padding: 0.5rem 1rem;
+  }
+  .projectsItem a{
+    font-size: 2em;
+  }
+  .projectsItem p{
+    font-size: 1.6em;
+  }
+  .projectsItem a:first-child{
+    text-align: center;
+  }
+  .projectsItem a{
+    padding: 0 1rem;
+  }
+  .main > section{
+    width: 100%;
+    align-items: center;
+  }
+  .menuMobile{
+    display: flex;
+    position: fixed;
+    left: 1.4rem;
+    top: 1rem;
+    z-index: 50;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 30%;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  .menuMobile *{
+    pointer-events: none;
   }
 }
-@media (min-width: 992px) {
-  .bgWaveMobile {
-    display: none;
-  }
-}
+

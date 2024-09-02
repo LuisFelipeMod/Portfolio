@@ -2,14 +2,25 @@
 
 import styles from "@/app/page.module.css";
 import { motion, useScroll } from "framer-motion";
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
+import useMediaQuery from "@/components/useMediaQuery";
+
+const isMobile = useMediaQuery("(max-width: 991px)");
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const openMenuMobile = () => {
+
+    setMenuOpen(!menuOpen);    
+    
+  };
 
   return (
     <main className={styles.main}>
@@ -20,15 +31,31 @@ export default function Home() {
 
       <motion.svg
         className={styles.bgWave}
-        initial={{
-          position: "absolute",
-          top: "-5vh",
-          transform: "rotate(180deg) skewY(0deg)",
-        }}
-        animate={{
-          top: "-12vh",
-          transform: "rotate(180deg) skewY(6deg)",
-        }}
+        initial={
+          isMobile
+            ? {
+                position: "absolute",
+                top: "0",
+                transform: "rotate(180deg) skewY(0deg)",
+              }
+            : {
+                position: "absolute",
+                top: "-5vh",
+                transform: "rotate(180deg) skewY(0deg)",
+              }
+        }
+        animate={
+          isMobile
+            ? {
+                position: "absolute",
+                top: "-12vh",
+                transform: "rotate(181deg) skewY(6deg)",
+              }
+            : {
+                top: "-12vh",
+                transform: "rotate(180deg) skewY(6deg)",
+              }
+        }
         transition={{
           duration: 2,
           delay: 0.4,
@@ -45,7 +72,26 @@ export default function Home() {
         ></path>
       </motion.svg>
       <div className={styles.comingSection}>
-        <Navbar />
+        <button className={styles.menuMobile} onClick={openMenuMobile}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu"
+          >
+            <line x1="4" x2="20" y1="12" y2="12" />
+            <line x1="4" x2="20" y1="6" y2="6" />
+            <line x1="4" x2="20" y1="18" y2="18" />
+          </svg>
+        </button>
+
+        <Navbar open={menuOpen} />
       </div>
       <section className={styles.aboutMe_section} id="aboutMe">
         <h1 className={styles.mainTitle}>Sobre mim</h1>
