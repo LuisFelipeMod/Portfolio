@@ -137,9 +137,8 @@ export default function Home() {
                 minha comunicação, trabalho em equipe e proatividade.
                 <br />
                 <br />
-                Estou cursando Análise e Desenvolvimento de Sistemas na Unimar,
-                e anteriormente, cursei Desenvolvimento de Sistemas Integrado ao
-                Ensino Médio na Etec Antonio Devisate. <br />
+                Sou formado em Análise e Desenvolvimento de Sistemas na Unimar e atuo como desenvolvedor há 3 anos.
+                <br />
                 <br />
                 Caso tenha uma proposta, segue abaixo meus contatos e redes
                 sociais. xD
