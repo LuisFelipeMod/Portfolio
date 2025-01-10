@@ -5,7 +5,7 @@
   font-family: Montserrat, sans-serif;
 }
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ ul,
 li {
   list-style-type: none;
 }
-  
+
 .lines {
   position: absolute;
   top: 0;
@@ -126,6 +126,226 @@ button {
   transform: translate(-50%, -50%);
   animation: colors 5s infinite;
   display: none;
+}
+
+.embla {
+  margin: auto;
+  --slide-height: 19rem;
+  --slide-spacing: 1rem;
+  --slide-size: 70%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide{
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__slide > a > img{
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
+.embla__slide > div{
+  background-color: #0000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .333s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.embla__slide > div:hover{
+  background-color: #0000007c;
+  width: 100%;
+  height: 100%;
+}
+
+.embla__slide > div > span{
+  user-select: none;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #aeb8f4, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 30rem;
+  display: block;
+  text-align: justify;
+}
+.embla__slide__name {
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  font-size: 2rem;
+  line-height: 110%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #aeb8f4, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.embla__slide__stacks{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.embla__slide__tooltip{
+  position: relative;
+  cursor: pointer;
+}
+
+.embla__slide__tooltip > img{
+  width: 50px;
+  height: 50px;
+}
+
+.embla__slide__tooltip:hover > img{
+  filter: brightness(0.5);
+}
+
+
+.embla__slide__tooltip > svg{
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(2px 4px 6px black);
+  transition: .333s ease-in-out;
+}
+
+span.embla__slide__tooltip__text{
+  background: rgb(34, 102, 175);
+  color: #FFF;
+  padding: 0.5rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  position: absolute;
+  top: -3rem;
+  left: -0.8rem;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: .333s ease-in-out;
+}
+
+.embla__slide__tooltip:hover span.embla__slide__tooltip__text{
+  visibility: visible;
+  opacity: 1;
+}
+
+.embla__slide__tooltip:hover svg{
+  filter: brightness(0.5);
+}
+
+.embla__controls {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: space-between;
+  gap: 1.2rem;
+  margin-top: 1.8rem;
+}
+.embla__buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+  align-items: center;
+}
+.embla__button {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  border-radius: 50%;
+  color: var(--text-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.embla__button:disabled {
+  color: var(--detail-high-contrast);
+}
+.embla__button__svg {
+  width: 35%;
+  height: 35%;
+}
+.embla__play {
+  -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  touch-action: manipulation;
+  display: inline-flex;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-end;
+  color: var(--text-body);
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0 2.4rem;
+  min-width: 8.4rem;
+}
+
+.embla__button__svg path{
+  fill: #fff;
+}
+
+.embla__button{
+  border: 1px solid #2266af;
+  background: #2266af;
+}
+
+.embla__slide > a > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.embla__slide > a > div > span{
+  font-size: 1.35em;
 }
 
 @keyframes colors {

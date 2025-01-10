@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ChronosWork",
+    "link": "https://github.com/LuisFelipeMod/ChronosWork",
+    "desc": "Registro e gestão de atividades de colaboradores. Quando houver um novo registro de atividade, ela é enviada pra uma planilha online via Google Sheets API.",
+    "stacks": ["NextJS", "Typescript"],
+    "image_url": "/projects/chronos-work.png"
+  },
+  {
+    "name": "Testes Automatizados",
+    "link": "https://github.com/LuisFelipeMod/testes-automatizados",
+    "desc": "Uma API simples com testes E2E criados em NodeJS, sem uso de nenhum framework.",
+    "stacks": ["NodeJS"],
+    "image_url": "/projects/testes-automatizados2.png"
+  },
+  {
+    "name": "Oscel",
+    "link": "https://github.com/LuisFelipeMod/projeto-integrador",
+    "stacks": ["NextJS", "Typescript", "NestJS"],
+    "image_url": "/projects/oscel.png",
+    "desc": "Plataforma de gestão de ordens de serviço, desenvolvida em equipe."
+  },
+  {
+    "name": "Cat API",
+    "link": "https://github.com/LuisFelipeMod/Cat-API-Vue",
+    "stacks": ["VueJS"],
+    "image_url": "/projects/cat-api.png",
+    "desc": "Uma aplicação simples usando Vue.js que consome a Cat API (https://thecatapi.com/)"
+  },
+  {
+    "name": "Portfólio",
+    "link": "https://github.com/LuisFelipeMod/portfolio2",
+    "stacks": ["NextJS"],
+    "image_url": "/projects/portfolio2.png",
+    "desc": "Portfólio onde exibo meus projetos"
+  }
+]

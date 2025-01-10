@@ -69,20 +69,6 @@ export default function Navbar(props) {
         >
           Projetos
         </motion.li>
-        <motion.li
-          className={styles.navItem}
-          whileHover={{
-            background: "#2d45e0",
-          }}
-          whileTap={{
-            scale: "0.9",
-            transition: { ease: "easeOut", duration: 10 },
-          }}
-        >
-          <motion.a className={styles.navItem} href="curriculo">
-            Currículo
-          </motion.a>
-        </motion.li>
       </ul>
     </motion.navbar>
   );
