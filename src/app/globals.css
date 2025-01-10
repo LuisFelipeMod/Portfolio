@@ -351,6 +351,30 @@ span.embla__slide__tooltip__text{
   font-size: 1.35em;
 }
 
+
+.embla__slide__repo__button{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #2266af;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.embla__slide__repo__button svg{
+  fill: #fff;
+  width: 45px;
+  height: 45px;
+}
+
 @keyframes colors {
   0% {
     filter: hue-rotate(0deg);

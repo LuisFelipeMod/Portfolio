@@ -24,6 +24,15 @@ export default function Navbar(props) {
     }
   };
 
+
+  const scrollToContacts = () => {
+    const projectsSection = document.getElementById("contacts");
+
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <motion.navbar
       className={openInMobile ? `${styles.nav} ${styles.open}`: styles.nav }
@@ -68,6 +77,20 @@ export default function Navbar(props) {
           onClick={scrollToProjects}
         >
           Projetos
+        </motion.li>
+
+        <motion.li
+          className={styles.navItem}
+          whileHover={{
+            background: "#2d45e0",
+          }}
+          whileTap={{
+            scale: "0.9",
+            transition: { ease: "easeOut", duration: 10 },
+          }}
+          onClick={scrollToContacts}
+        >
+          Contatos
         </motion.li>
       </ul>
     </motion.navbar>
