@@ -8,16 +8,13 @@ import Navbar from "@/components/navbar";
 import Projects from "@/components/projects";
 import useMediaQuery from "@/components/useMediaQuery";
 
-
 export default function Home() {
   const isMobile = useMediaQuery("(max-width: 991px)");
   const { scrollYProgress } = useScroll();
   const [menuOpen, setMenuOpen] = React.useState(false);
 
   const openMenuMobile = () => {
-
-    setMenuOpen(!menuOpen);    
-    
+    setMenuOpen(!menuOpen);
   };
 
   return (
@@ -65,7 +62,7 @@ export default function Home() {
       >
         <path
           fill="#2d45e0"
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,128L48,112C96,96,192,64,288,85.3C384,107,480,181,576,181.3C672,181,768,107,864,117.3C960,128,1056,224,1152,266.7C1248,309,1344,299,1392,293.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
         ></path>
       </motion.svg>
@@ -78,10 +75,10 @@ export default function Home() {
             viewBox="0 0 24 24"
             fill="none"
             stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-menu"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-menu"
           >
             <line x1="4" x2="20" y1="12" y2="12" />
             <line x1="4" x2="20" y1="6" y2="6" />
@@ -120,6 +117,7 @@ export default function Home() {
                 width={1516}
                 height={1470}
                 src="/profile.jpeg"
+                alt="Sobre mim"
               ></Image>
             </figure>
             <div className={styles.aboutMe_card}>
@@ -156,10 +154,10 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#aeb8f4"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-mail"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-mail"
                   >
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -193,10 +191,10 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-linkedin"
+                    strokeWidth="1"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-linkedin"
                   >
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                     <rect width="4" height="12" x="2" y="9" />
@@ -212,10 +210,10 @@ export default function Home() {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-github"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-github"
                   >
                     <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
                     <path d="M9 18c-4.51 2-5-2-7-2" />
@@ -229,6 +227,58 @@ export default function Home() {
       </section>
 
       <Projects />
+
+      <section className={styles.contacts_section} id="contacts">
+        <h1 className={styles.mainTitle}>Contatos e links</h1>
+        <div className={styles.contacts_container}>
+          <motion.div
+            className={styles.aboutMe_box}
+            initial={{
+              opacity: 0,
+              transform: "scale(0.5)",
+            }}
+            whileInView={{
+              opacity: 1,
+              transform: "scale(1)",
+            }}
+            exit={{
+              opacity: 0,
+              transform: "scale(0.8)",
+            }}
+            transition={{
+              ease: "linear",
+              duration: 0.7,
+              transform: { delay: 0.3, duration: 0.3 },
+            }}
+          >
+            <div className={styles.contacts_card}>
+              
+              <p>
+                Email:
+                <a href="luisgmodesto12@gmail.com">
+                  luisgmodesto12@gmail.com
+                </a>
+              </p>
+
+              <p>
+                Whatsapp:
+                <a href="https://api.whatsapp.com/send?phone=5514998084367">+55 (14) 99808-4367</a>
+              </p>
+              
+
+              <p>
+                Linkedin:
+                <a href="https://www.linkedin.com/in/luisfelipegm/">https://www.linkedin.com/in/luisfelipegm/</a>
+              </p>
+
+              <p>
+                Github: 
+                <a href="https://github.com/LuisFelipeMod">https://github.com/LuisFelipeMod/</a>
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </main>
   );
 }
