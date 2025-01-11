@@ -125,25 +125,27 @@ export default function Home() {
                 Luis Felipe Gonçalves Modesto
               </h2>
               <p className={styles.aboutMe_paragraph}>
-                Olá, meu nome é Luis Felipe e sou desenvolvedor! <br />
-                <br />
-                Estudo programação desde 2019. Desde então, venho me aprimorando
-                cada vez mais, o meu objetivo é absorver cada vez mais
-                conhecimento! <br />
-                <br />
-                Minha primeira oportunidade de emprego surgiu em 2021, e foi
-                muito importante para o meu crescimento. Graças à essa
-                oportunidade, aprendi a ter uma visão corporativa; desenvolvendo
-                minha comunicação, trabalho em equipe e proatividade.
+                Olá! Meu nome é Luis Felipe e sou desenvolvedor de software.{" "}
                 <br />
                 <br />
-                Sou formado em Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor há 3 anos.
+                Minha jornada na programação começou em 2019, e desde então,
+                tenho me dedicado continuamente ao aprendizado e aprimoramento
+                de minhas habilidades. Meu objetivo é absorver novos
+                conhecimentos e acompanhar as melhores práticas do mercado.{" "}
                 <br />
                 <br />
-                Caso tenha uma proposta, segue abaixo meus contatos e redes
-                sociais. xD
+                Em 2021, tive minha primeira oportunidade de trabalho, um marco
+                fundamental para meu crescimento profissional. Essa experiência
+                me ajudou a desenvolver uma visão corporativa, aprimorando minha
+                comunicação, trabalho em equipe e proatividade. <br />
+                <br />
+                Sou formado em Análise e Desenvolvimento de Sistemas e atuo como
+                desenvolvedor há 3 anos, sempre focado em entregar soluções
+                eficientes e inovadoras. <br />
+                <br />
+                Caso tenha interesse em trabalhar comigo, meus contatos e redes
+                sociais estão disponíveis abaixo. Será um prazer trocar ideias!
               </p>
-
               <div className={styles.contactMe}>
                 <a href="mailto:luisgmodesto12@gmail.com" target="_blank">
                   <svg
@@ -251,28 +253,30 @@ export default function Home() {
             }}
           >
             <div className={styles.contacts_card}>
-              
               <p>
                 Email:
-                <a href="luisgmodesto12@gmail.com">
-                  luisgmodesto12@gmail.com
-                </a>
+                <a href="luisgmodesto12@gmail.com">luisgmodesto12@gmail.com</a>
               </p>
 
               <p>
                 Whatsapp:
-                <a href="https://api.whatsapp.com/send?phone=5514998084367">+55 (14) 99808-4367</a>
+                <a href="https://api.whatsapp.com/send?phone=5514998084367">
+                  +55 (14) 99808-4367
+                </a>
               </p>
-              
 
               <p>
                 Linkedin:
-                <a href="https://www.linkedin.com/in/luisfelipegm/">https://www.linkedin.com/in/luisfelipegm/</a>
+                <a href="https://www.linkedin.com/in/luisfelipegm/">
+                  https://www.linkedin.com/in/luisfelipegm/
+                </a>
               </p>
 
               <p>
-                Github: 
-                <a href="https://github.com/LuisFelipeMod">https://github.com/LuisFelipeMod/</a>
+                Github:
+                <a href="https://github.com/LuisFelipeMod">
+                  https://github.com/LuisFelipeMod/
+                </a>
               </p>
             </div>
           </motion.div>
