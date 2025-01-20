@@ -1,35 +1,44 @@
 [
   {
     "name": "ChronosWork",
-    "link": "https://github.com/LuisFelipeMod/ChronosWork",
+    "link": "https://chronos-work.vercel.app/",
+    "repo": "https://github.com/LuisFelipeMod/ChronosWork",
     "desc": "Registro e gestão de atividades de colaboradores. Quando houver um novo registro de atividade, ela é enviada pra uma planilha online via Google Sheets API.",
     "stacks": ["NextJS", "Typescript"],
     "image_url": "/projects/chronos-work.png"
   },
   {
     "name": "Testes Automatizados",
-    "link": "https://github.com/LuisFelipeMod/testes-automatizados",
-    "desc": "Uma API simples com testes E2E criados em NodeJS, sem uso de nenhum framework.",
+    "repo": "https://github.com/LuisFelipeMod/testes-automatizados",
+    "desc": "Uma API simples com testes E2E criados em NodeJS. Tanto a API quanto os testes foram desenvolvidos sem uso de nenhum framework.",
     "stacks": ["NodeJS"],
     "image_url": "/projects/testes-automatizados2.png"
   },
   {
     "name": "Oscel",
-    "link": "https://github.com/LuisFelipeMod/projeto-integrador",
+    "repo": "https://github.com/LuisFelipeMod/projeto-integrador",
     "stacks": ["NextJS", "Typescript", "NestJS"],
     "image_url": "/projects/oscel.png",
-    "desc": "Plataforma de gestão de ordens de serviço, desenvolvida em equipe."
+    "desc": "Plataforma de gestão de ordens de serviço. Feito em equipe. "
   },
   {
     "name": "Cat API",
-    "link": "https://github.com/LuisFelipeMod/Cat-API-Vue",
+    "repo": "https://github.com/LuisFelipeMod/Cat-API-Vue",
     "stacks": ["VueJS"],
     "image_url": "/projects/cat-api.png",
     "desc": "Uma aplicação simples usando Vue.js que consome a Cat API (https://thecatapi.com/)"
   },
   {
+    "name": "Easy Calc",
+    "link": "https://easy-calc-alpha.vercel.app/",
+    "repo": "https://github.com/LuisFelipeMod/easy-calc",
+    "stacks": ["VueJS"],
+    "image_url": "/projects/easy-calc.png",
+    "desc": "A Easy Calc é uma calculadora de horas. Com ela você pode substrair ou somar dois horários diferentes."
+  },
+  {
     "name": "Portfólio",
-    "link": "https://github.com/LuisFelipeMod/portfolio2",
+    "repo": "https://github.com/LuisFelipeMod/portfolio2",
     "stacks": ["NextJS"],
     "image_url": "/projects/portfolio2.png",
     "desc": "Portfólio onde exibo meus projetos"

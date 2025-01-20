@@ -64,31 +64,42 @@ const EmblaCarousel = (props) => {
         <div className="embla__container">
           {slides.map((index, idx) => (
             <div className="embla__slide" key={idx}>
-              <a href={index.link}>
-                <Image width={1200} height={381} src={index.image_url} alt={index.name} />
-                <div>
-                  <div className="embla__slide__name">{index.name}</div>
-                  <div className="embla__slide__stacks">
-                    {index.stacks &&
-                      index.stacks.map((stack, idx) => (
-                        <div className="embla__slide__tooltip" key={idx}>
-                          <span
-                            className="embla__slide__tooltip__text"
-                          >
-                            {stack}
-                          </span>
-                          <StackIcon stack={stack}></StackIcon>
-                        </div>
-                      ))}
-                  </div>
-                  <span>{index.desc}</span>
-                  <div>
-                    <button className="embla__slide__repo__button">
-                      Ver repositório
-                    </button>
-                  </div>
+              <Image
+                width={1200}
+                height={381}
+                src={index.image_url}
+                alt={index.name}
+              />
+              <div>
+                <div className="embla__slide__name">{index.name}</div>
+                <div className="embla__slide__stacks">
+                  {index.stacks &&
+                    index.stacks.map((stack, idx) => (
+                      <div className="embla__slide__tooltip" key={idx}>
+                        <span className="embla__slide__tooltip__text">
+                          {stack}
+                        </span>
+                        <StackIcon stack={stack}></StackIcon>
+                      </div>
+                    ))}
                 </div>
-              </a>
+                <span>{index.desc}</span>
+                <div className="embla__slide__buttons">
+                  {index.link ? (
+                    <a href={index.link} className="embla__slide__button">
+                      Ver site
+                    </a>
+                  ) : (
+                    <></>
+                  )}
+
+                  {index.repo ? (
+                    <a href={index.repo} className="embla__slide__button">Ver repositório</a>
+                  ) : (
+                    <></>
+                  )}
+                </div>
+              </div>
             </div>
           ))}
         </div>

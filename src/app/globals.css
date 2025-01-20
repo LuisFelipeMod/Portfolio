@@ -129,6 +129,7 @@ button {
 }
 
 .embla {
+  position: relative;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -148,9 +149,12 @@ button {
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
+  display: flex;
+  flex-direction: column;
 }
 
-.embla__slide > a > img{
+
+.embla__slide > img{
   border-radius: 1rem;
   object-fit: cover;
   object-position: top;
@@ -161,9 +165,6 @@ button {
   background-color: #0000;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   transition: .333s ease-in-out;
   display: flex;
   justify-content: center;
@@ -179,17 +180,25 @@ button {
 
 .embla__slide > div > span{
   user-select: none;
-  text-transform: uppercase;
+  text-transform: none;
   background: linear-gradient(45deg, #aeb8f4, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
-  width: 30rem;
+  width: calc(100% - 4rem);
   display: block;
-  text-align: justify;
+  font-size: 1.3em;
+  text-align: center;
 }
+
+.embla__slide__repo__buttons{
+  display: flex;
+  flex-direction: column;
+}
+
+
 .embla__slide__name {
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   border-radius: 1.8rem;
@@ -265,18 +274,13 @@ span.embla__slide__tooltip__text{
   filter: brightness(0.5);
 }
 
-.embla__controls {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-between;
-  gap: 1.2rem;
-  margin-top: 1.8rem;
-}
 .embla__buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.6rem;
-  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+
 }
 .embla__button {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
@@ -337,8 +341,8 @@ span.embla__slide__tooltip__text{
 }
 
 .embla__button{
-  border: 1px solid #2266af;
-  background: #2266af;
+  border: 1px solid #fff;
+  background: #000;
 }
 
 .embla__slide > a > div{
@@ -351,8 +355,13 @@ span.embla__slide__tooltip__text{
   font-size: 1.35em;
 }
 
+.embla__slide__buttons{
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-.embla__slide__repo__button{
+.embla__slide__button{
   display: flex;
   align-items: center;
   gap: 0.5rem;
