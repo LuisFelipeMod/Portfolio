@@ -135,6 +135,26 @@ button {
   --slide-spacing: 1rem;
   --slide-size: 70%;
 }
+
+@media (max-width: 768px) {
+  .embla__slide{
+    flex: 0 0 30% !important;
+  }
+  .embla__buttons{
+    top: 13% !important;
+    width: 29% !important;
+    left: 35.5%;
+  }
+  .embla_
+  .embla__slide > img{
+    height: auto;
+  }
+  section#contacts > div{
+    width: 83%;
+  }
+
+}
+
 .embla__viewport {
   overflow: hidden;
 }
