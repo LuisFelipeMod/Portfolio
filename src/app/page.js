@@ -144,7 +144,7 @@ export default function Home() {
                 eficientes e inovadoras. <br />
                 <br />
                 Caso tenha interesse em trabalhar comigo, meus contatos e redes
-                sociais estão disponíveis abaixo. Será um prazer trocar ideias!
+                sociais estão disponíveis abaixo. Será um prazer conversar!
               </p>
               <div className={styles.contactMe}>
                 <a href="mailto:luisgmodesto12@gmail.com" target="_blank">

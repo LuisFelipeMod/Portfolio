@@ -10,7 +10,7 @@
   {
     "name": "Testes Automatizados",
     "repo": "https://github.com/LuisFelipeMod/testes-automatizados",
-    "desc": "Uma API simples com testes E2E criados em NodeJS. Tanto a API quanto os testes foram desenvolvidos sem uso de nenhum framework.",
+    "desc": "Uma API com testes E2E criados em NodeJS. Tanto a API quanto os testes foram desenvolvidos sem uso de nenhum framework.",
     "stacks": ["NodeJS"],
     "image_url": "/projects/testes-automatizados2.png"
   },
@@ -26,7 +26,7 @@
     "repo": "https://github.com/LuisFelipeMod/Cat-API-Vue",
     "stacks": ["VueJS"],
     "image_url": "/projects/cat-api.png",
-    "desc": "Uma aplicação simples usando Vue.js que consome a Cat API (https://thecatapi.com/)"
+    "desc": "Um site criado em Vue.js que consome a Cat API (https://thecatapi.com/)"
   },
   {
     "name": "Easy Calc",
